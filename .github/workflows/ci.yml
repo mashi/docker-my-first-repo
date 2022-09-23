@@ -38,5 +38,5 @@ jobs:
           push: true
           tags: ghcr.io/mashi/simplewhale:latest
           # tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
-          # cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:buildcache
-          # cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:buildcache,mode=max
+          cache-from: type=registry,ref=ghcr.io/mashi/simplewhale:buildcache
+          cache-to: type=registry,ref=ghcr.io/mashi/simplewhale:buildcache,mode=max
